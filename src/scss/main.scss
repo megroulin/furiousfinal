@@ -17,9 +17,24 @@
 
 .startbutton {
   position: absolute;
-  bottom: 25%;
+  bottom: 17%;
   left: 50%;
   transform: translateX(-50%);
+  color: white;
+  text-align: center;
+  /* text */
+  font-family: "Inknut Antiqua";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.75px;
+  display: flex;
+  padding: 5px 100px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 51px;
+  background: #b22e5f;
 }
 
 .map {
@@ -94,21 +109,22 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
   width: 555px;
   margin: 0 auto;
   left: 50%;
   transform: translateX(-50%);
-  top: 67.2%;
+  top: 60%;
 }
 
 .choice-button {
   background-color: black;
   color: white;
-  padding: 14px;
+  padding: 8px;
   border: none;
   font-size: 16px;
   text-align: center;
+  font-family: "Inknut Antiqua";
 }
 
 .timeline {
