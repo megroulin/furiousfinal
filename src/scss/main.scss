@@ -1,6 +1,7 @@
 @import "base";
 @import "layout";
 @import "modules/example";
+@import "bootstrap/scss/bootstrap-grid";
 
 .startimg {
   width: 100%;
@@ -35,7 +36,7 @@
 
 .skip {
   position: fixed;
-  right: 100px;
+  right: 70px;
   top: 20px;
   background-color: black;
   color: white;
@@ -45,6 +46,7 @@
   border: none;
   font-size: 16px;
   text-align: center;
+  width: 89px;
 }
 
 .gouziright {
@@ -65,13 +67,6 @@
 
 .gouzileft img {
   height: 60px;
-}
-
-.timeline {
-  position: absolute;
-  bottom: 50px;
-  width: 80%;
-  left: 10%;
 }
 
 .ysa {
@@ -114,4 +109,56 @@
   border: none;
   font-size: 16px;
   text-align: center;
+}
+
+.timeline {
+  border: none;
+  border-top: 3.5px solid black; /* Ligne noire fine */
+  position: absolute;
+  width: 80%; /* Ajuste la largeur selon tes besoins */
+  bottom: 50px;
+  left: 10%;
+}
+
+.timeline::before,
+.timeline::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg); /* Rotation pour créer un losange */
+  width: 10px; /* Taille du losange */
+  height: 10px;
+  background-color: black; /* Couleur du losange */
+}
+
+.timeline::before {
+  left: 0; /* Positionne à gauche */
+}
+
+.timeline::after {
+  right: 0; /* Positionne à droite */
+}
+
+.timeline hr {
+  border: none;
+}
+
+.global {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.row + .row {
+  margin-top: 16px;
+}
+
+.row > .col,
+.row > [class^="col-"] {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: rgba(86, 61, 124, 0.15);
+  border: 1px solid rgba(86, 61, 124, 0.2);
 }
