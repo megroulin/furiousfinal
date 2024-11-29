@@ -9,13 +9,13 @@ window.addEventListener("DOMContentLoaded", function () {
   }, 100);
   //variables
   var mapCursor = document.querySelector(".ysa");
-  var gameScreen = document.querySelector(".global");
+  var globalScreen = document.querySelector(".global");
 
-  //variables de la timeline
+  //timeline
   function timelineInit() {
     var tl = gsap.timeline({
       scrollTrigger: {
-        trigger: gameScreen,
+        trigger: globalScreen,
         start: "top",
         end: "4000px",
         // markers: true,
