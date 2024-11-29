@@ -22,7 +22,7 @@
   transform: translateX(-50%);
   color: white;
   text-align: center;
-  /* text */
+  /* texte */
   font-family: "Inknut Antiqua";
   font-size: 25px;
   font-style: normal;
@@ -150,7 +150,7 @@
   border: none;
   border-top: 3.5px solid black; /* Ligne noire fine */
   position: absolute;
-  width: 80%; /* Ajuste la largeur selon tes besoins */
+  width: 80%;
   bottom: 50px;
   left: 10%;
 }
@@ -161,9 +161,9 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%) rotate(45deg); /* Rotation pour créer un losange */
-  width: 10px; /* Taille du losange */
+  width: 10px;
   height: 10px;
-  background-color: black; /* Couleur du losange */
+  background-color: black;
 }
 
 .timeline::before {
@@ -227,6 +227,11 @@ a {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+
+.order-btn:hover {
+  background-color: white;
+  color: black;
 }
 
 .restart {
